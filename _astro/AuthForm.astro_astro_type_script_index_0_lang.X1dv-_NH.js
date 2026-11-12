@@ -1,0 +1,1 @@
+var e=document.querySelector(`[data-password-toggle]`),t=document.querySelector(`#account-password`);e&&t&&(e.hidden=!1,e.addEventListener(`click`,()=>{let n=t.type===`password`;t.type=n?`text`:`password`,e.setAttribute(`aria-pressed`,String(n)),e.textContent=n?e.dataset.hide:e.dataset.show}));

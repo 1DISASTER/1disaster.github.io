@@ -1,0 +1,24 @@
+# Digits Cloud crawler policy. Generated at build time (src/lib/crawlers.ts); edit there, not here.
+
+# Review build: not for search results or AI. Every page carries noindex; AI crawlers are refused here.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Disallow: /
+
+User-agent: __usage_ai-training
+Disallow: /
+
+# Everyone else.
+User-agent: *
+Allow: /
+
+Sitemap: https://digits.host/sitemap-index.xml
